@@ -1,2 +1,3 @@
-# todostodos
- a todo app design by me
+# Resturant webpage
+ a sample resturant webpage product using webpack and
+ es6 modules
