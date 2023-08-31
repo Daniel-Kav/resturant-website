@@ -1,2 +1,4 @@
-console.log("Starting")
-alert("Started");
+
+import { createHomePage } from "./homepage";
+
+createHomePage();
