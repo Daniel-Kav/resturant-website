@@ -5,7 +5,7 @@ export function createContactTab() {
     contactDiv.innerHTML = `
         <h2>Contact Us</h2>
         <p>Email: contact@restaurant.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Phone: (1234) 456-7890</p>
     `;
 
     return contactDiv;
