@@ -1,4 +1,4 @@
-// contactTab.js
+// contactTab.jss
 export function createContactTab() {
     const contactDiv = document.createElement("div");
     contactDiv.classList.add("tab-content");
