@@ -2,7 +2,7 @@ import { createHomePage } from './homepage';
 import { createContactTab } from './contactTab';
 import { createMenuTab } from './menuTab';
 
-// Initial page load
+// Initial pge load
 createHomePage();
 
 const contentDiv = document.getElementById("content");
