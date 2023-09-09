@@ -4,6 +4,7 @@ import { createMenuTab } from './menuTab';
 
 // Initial pge load
 createHomePage();
+alert('Initial pge load');
 
 const contentDiv = document.getElementById("content");
 const tabs = document.querySelectorAll(".tab");
