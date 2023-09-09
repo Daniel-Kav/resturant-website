@@ -1,6 +1,5 @@
-import createReasturantHomepage from './reasturant ';
-
+import createRestaurantHomepage from "./reasturant";
 
 export default function initialLoad() {
-    createReasturantHomepage();
-};
+    createRestaurantHomepage();
+}

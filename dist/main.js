@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initialLoad)\n/* harmony export */ });\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './reasturant '\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\n\r\n\r\nfunction initialLoad() {\r\n    Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './reasturant '\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\r\n};\n\n//# sourceURL=webpack://resturant-website/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initialLoad)\n/* harmony export */ });\n/* harmony import */ var _reasturant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reasturant */ \"./src/reasturant.js\");\n\r\n\r\nfunction initialLoad() {\r\n    (0,_reasturant__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\n\n\n//# sourceURL=webpack://resturant-website/./src/pageLoad.js?");
+
+/***/ }),
+
+/***/ "./src/reasturant.js":
+/*!***************************!*\
+  !*** ./src/reasturant.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst createRestaurantHomepage = () => { \r\n    const content = document.querySelector('#content');\r\n    const pageContent = document.createElement('div');\r\n    pageContent.classList.add('page-content');\r\n\r\n    // Create and append image elements\r\n    const image = document.createElement('img');\r\n    image.src = 'https://res.cloudinary.com/sagacity/image/uploads/';\r\n    image.height = '300';\r\n    pageContent.appendChild(image);\r\n\r\n    // Create and append headline elements\r\n    const headline = document.createElement('h1');\r\n    headline.textContent = 'Welcome to our restaurant';\r\n    pageContent.appendChild(headline);\r\n\r\n    // Create and append copy elements\r\n    const copy = document.createElement('p');\r\n    copy.textContent = 'We serve the best dishes in the world';\r\n    pageContent.appendChild(copy);\r\n    content.appendChild(pageContent);\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createRestaurantHomepage);\r\n\n\n//# sourceURL=webpack://resturant-website/./src/reasturant.js?");
 
 /***/ })
 

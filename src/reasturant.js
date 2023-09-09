@@ -5,7 +5,7 @@ const createRestaurantHomepage = () => {
 
     // Create and append image elements
     const image = document.createElement('img');
-    image.src = 'https://res.cloudinary.com/sagacity/image/uploads/';
+    image.src = 'https://picsum.photos/200';
     image.height = '300';
     pageContent.appendChild(image);
 
