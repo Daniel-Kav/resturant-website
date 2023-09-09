@@ -32,14 +32,23 @@ const createTabs = () => {
 
     // add event listeners to the div
     div1.addEventListener('click', ()=>{
+        clearcontent();
         createRestaurantHomepage();
     })
     div2.addEventListener('click', ()=>{
+        clearcontent();
         createMenuPage();
     });
     div3.addEventListener('click', ()=>{
+        clearcontent();
         createContsctPage();
     });
 };
-
+function clearcontent() {
+    const content = document.querySelector('#content');
+    const pageContent = document.querySelect('.page-content');
+    if (pageContent) {
+        content.removeChild(pageContent);
+    }
+}
 export default createTabs;
