@@ -1,4 +1,6 @@
-
+import createContsctPage from "./contact";
+import createMenuPage from "./menu";
+import createRestaurantHomepage from "./reasturant";
 
 const createTabs = () => {
     const content = document.querySelector('#content');
@@ -27,6 +29,17 @@ const createTabs = () => {
     content.appendChild(div1);
     content.appendChild(div2);
     content.appendChild(div3);
+
+    // add event listeners to the div
+    div1.addEventListener('click', ()=>{
+        createRestaurantHomepage();
+    })
+    div2.addEventListener('click', ()=>{
+        createMenuPage();
+    });
+    div3.addEventListener('click', ()=>{
+        createContsctPage();
+    });
 };
 
 export default createTabs;
