@@ -46,7 +46,7 @@ const createTabs = () => {
 };
 function clearcontent() {
     const content = document.querySelector('#content');
-    const pageContent = document.querySelect('.page-content');
+    const pageContent = document.querySelector('.page-content');
     if (pageContent) {
         content.removeChild(pageContent);
     }
