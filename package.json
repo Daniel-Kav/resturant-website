@@ -4,7 +4,7 @@
   "description": "a sample resturant webpage product using webpack and\r  es6 modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

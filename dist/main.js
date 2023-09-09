@@ -10,43 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/contactTab.js":
-/*!***************************!*\
-  !*** ./src/contactTab.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createContactTab: () => (/* binding */ createContactTab)\n/* harmony export */ });\n// contactTab.jss\r\nfunction createContactTab() {\r\n    const contactDiv = document.createElement(\"div\");\r\n    contactDiv.classList.add(\"tab-content\");\r\n    contactDiv.innerHTML = `\r\n        <h2>Contact Us</h2>\r\n        <p>Email: contact@restaurant.com</p>\r\n        <p>Phone: (123) 456-7890</p>\r\n    `;\r\n\r\n    return contactDiv;\r\n}\r\n\n\n//# sourceURL=webpack://resturant-website/./src/contactTab.js?");
-
-/***/ }),
-
-/***/ "./src/homepage.js":
-/*!*************************!*\
-  !*** ./src/homepage.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createHomePage: () => (/* binding */ createHomePage)\n/* harmony export */ });\n// homepage.js\r\nfunction createHomePage() {\r\n    const contentDiv = document.getElementById(\"content\");\r\n\r\n    const header = document.createElement(\"div\");\r\n    header.classList.add(\"header\");\r\n    header.innerHTML = `\r\n        <h1>Welcome to Our Restaurant</h1>\r\n        <p>Experience the Finest Dining</p>\r\n    `;\r\n\r\n    const restaurantImage = document.createElement(\"img\");\r\n    restaurantImage.classList.add(\"restaurant-image\");\r\n    restaurantImage.src = \"restaurant-image.jpg\";\r\n    restaurantImage.alt = \"Restaurant Interior\";\r\n\r\n    const restaurantInfo = document.createElement(\"div\");\r\n    restaurantInfo.classList.add(\"restaurant-info\");\r\n    restaurantInfo.innerHTML = `\r\n        <h2>About Us</h2>\r\n        <p>Discover the exquisite flavors and unique ambiance of our restaurant. We take pride in offering a diverse menu prepared with the finest ingredients. Our friendly staff is dedicated to making your dining experience memorable.</p>\r\n        <p>Join us for a gastronomic journey that delights the senses and satisfies the palate.</p>\r\n    `;\r\n\r\n    contentDiv.appendChild(header);\r\n    contentDiv.appendChild(restaurantImage);\r\n    contentDiv.appendChild(restaurantInfo);\r\n}\r\n\n\n//# sourceURL=webpack://resturant-website/./src/homepage.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _contactTab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contactTab */ \"./src/contactTab.js\");\n/* harmony import */ var _menuTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menuTab */ \"./src/menuTab.js\");\n\r\n\r\n\r\n\r\n// Initial pge load\r\n(0,_homepage__WEBPACK_IMPORTED_MODULE_0__.createHomePage)();\r\nalert('Initial pge load');\r\n\r\nconst contentDiv = document.getElementById(\"content\");\r\nconst tabs = document.querySelectorAll(\".tab\");\r\nconst tabContents = {\r\n    \"home\": _homepage__WEBPACK_IMPORTED_MODULE_0__.createHomePage,\r\n    \"contact\": _contactTab__WEBPACK_IMPORTED_MODULE_1__.createContactTab,\r\n    \"menu\": _menuTab__WEBPACK_IMPORTED_MODULE_2__.createMenuTab\r\n};\r\n\r\ntabs.forEach(tab => {\r\n    tab.addEventListener(\"click\", () => {\r\n        // Remove current content\r\n        while (contentDiv.firstChild) {\r\n            contentDiv.removeChild(contentDiv.firstChild);\r\n        }\r\n\r\n        // Get tab ID and call corresponding tab content function\r\n        const tabId = tab.getAttribute(\"data-tab\");\r\n        tabContents[tabId]();\r\n\r\n        // Add active class to clicked tab\r\n        tabs.forEach(t => t.classList.remove(\"active\"));\r\n        tab.classList.add(\"active\");\r\n    });\r\n});\r\n\n\n//# sourceURL=webpack://resturant-website/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\r\n\r\n\r\n//load page\r\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://resturant-website/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/menuTab.js":
-/*!************************!*\
-  !*** ./src/menuTab.js ***!
-  \************************/
+/***/ "./src/pageLoad.js":
+/*!*************************!*\
+  !*** ./src/pageLoad.js ***!
+  \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createMenuTab: () => (/* binding */ createMenuTab)\n/* harmony export */ });\n// menuTab.js\r\nfunction createMenuTab() {\r\n    const menuDiv = document.createElement(\"div\");\r\n    menuDiv.classList.add(\"tab-content\");\r\n    menuDiv.innerHTML = `\r\n        <h2>Menu</h2>\r\n        <p>Appetizers, main courses, desserts, and more! Explore our delicious menu option.</p>\r\n    `;\r\n\r\n    return menuDiv;\r\n}\r\n\n\n//# sourceURL=webpack://resturant-website/./src/menuTab.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initialLoad)\n/* harmony export */ });\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './reasturant '\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\n\r\n\r\nfunction initialLoad() {\r\n    Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './reasturant '\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\r\n};\n\n//# sourceURL=webpack://resturant-website/./src/pageLoad.js?");
 
 /***/ })
 
