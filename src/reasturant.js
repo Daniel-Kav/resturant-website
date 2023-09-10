@@ -5,7 +5,7 @@ const createRestaurantHomepage = () => {
 
     // Create and append image elements
     const image = document.createElement('img');
-    image.src = './assets/rest1.avif';
+    image.src = './assets/download.jpg';
     image.height = '300';
     pageContent.appendChild(image);
 
